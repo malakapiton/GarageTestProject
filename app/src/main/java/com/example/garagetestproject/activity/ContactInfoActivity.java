@@ -22,14 +22,6 @@ public class ContactInfoActivity extends AppCompatActivity {
 
     Contact mContact;
 
-    public static void start(Activity caller, Contact contact) {
-        Intent intent = new Intent(caller, ContactInfoActivity.class);
-        if (contact != null) {
-            intent.putExtra("Contact", contact);
-        }
-        caller.startActivity(intent);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
